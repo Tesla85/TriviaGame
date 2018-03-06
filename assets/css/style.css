@@ -1,0 +1,17 @@
+.container {
+        text-align: center;
+        position: relative;
+        padding: 100px;
+        margin: 50px;
+}
+
+
+div {
+    background-color: aqua;
+
+}
+
+body {
+    background-image: url(../images/bee.jpg); 
+    
+}

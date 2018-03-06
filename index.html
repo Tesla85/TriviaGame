@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>TriviaGame</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="assets/javascript/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+    <div id="questionContainer">
+    <div class="container">   
+
+        <div class="row">
+            <div class="col-md-4"></div>
+            <h1 class="col-md-4"></h1>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+    <form action="clickRadio">  
+        <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                            
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" >
+                            <label class="form-check-label" for="exampleRadios2">
+                            
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                            <label class="form-check-label" for="exampleRadios3">
+                            
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                            <label class="form-check-label" for="exampleRadios4">
+                            
+                            </label>
+                        </div>
+                        <br>
+                        <button type="button" class="btn btn-primary btn-lg" onclick="button">Submit</button>
+                        <div class="col-md-5"></div>
+                </div>
+        </div>
+    </form>  
+
+    </div>
+
+    <!-- <div claass="container">
+        <div class="row">
+                <div class="col-md-4"></div>
+                <h1 class="col-md-4">On average, what percentage of the body's energy does the brain use?</h1>
+                <div class="col-md-4"></div>
+        </div>
+
+        <div class="row">
+
+                <div class="col-md-5"></div>
+                <div class="col-md-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                            10%
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                            20%
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                            <label class="form-check-label" for="exampleRadios3">
+                            30%
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                            <label class="form-check-label" for="exampleRadios4">
+                            40%
+                            </label>
+                        </div>
+                        <br>
+                        <button type="button" class="btn btn-primary btn-lg">Submit</button>
+                        <div class="col-md-5"></div>
+                </div>
+        </div>
+    </div>
+
+    <div claass="container">
+        <div class="row">
+                <div class="col-md-4"></div>
+                <h1 class="col-md-4">What is the fastest creature in the ocean?</h1>
+                <div class="col-md-4"></div>
+        </div>
+
+        <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                            Mako Shark
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                            Barracuda
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                            <label class="form-check-label" for="exampleRadios3">
+                            Sailfish
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                            <label class="form-check-label" for="exampleRadios4">
+                            Yellowfin Tuna
+                            </label>
+                        </div>
+                        <br>
+                        <button type="button" class="btn btn-primary btn-lg">Submit</button>
+                        <div class="col-md-5"></div>
+                </div>
+        </div>
+    </div>
+
+    <div claass="container">
+        <div class="row">
+                <div class="col-md-4"></div>
+                <h1 class="col-md-4">What is the technical term for a sword's handle?</h1>
+                <div class="col-md-4"></div>
+        </div>
+    
+        <div class="row">
+
+                <div class="col-md-5"></div>
+                <div class="col-md-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                            Hilt
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                            Pommel
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                            <label class="form-check-label" for="exampleRadios3">
+                            Tang
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                            <label class="form-check-label" for="exampleRadios4">
+                            Grip
+                            </label>
+                        </div>
+                        <br>
+                        <button type="button" class="btn btn-primary btn-lg">Submit</button>
+                        <div class="col-md-5"></div>
+                </div>
+        </div>
+    </div> -->
+
+   
+
+<script class =  "text/javascript">
+    $(document).ready(function(){
+        createQuestions();
+    });
+</script>
+
+
+
+</body>
+</html>
